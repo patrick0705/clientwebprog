@@ -7,6 +7,6 @@ form.addEventListener('submit', (event) => {
         method: 'POST'
     })
     .then(response => response.text())
-    .then(data => console.log(data))
+    .then(data => console.log(data), form.reset())
     .catch(error => console.error(error));
 });
